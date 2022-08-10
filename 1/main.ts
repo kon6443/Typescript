@@ -55,3 +55,16 @@ const push: Push = (config) => {
         console.log(config.path, config.state)
     }
 }
+
+type Add2 = {
+    (a: number, b: number): number,
+    (a: number, b: number, c?:number): number
+}
+
+const add2:Add2 = (a, b, c?:number) => {
+    if(c) return a+b+c;
+    else return a+b;
+}
+
+console.log(add2(1,2));
+console.log(add2(1,2,3));

@@ -35,8 +35,11 @@ class Dict {
 
 class Word {
     constructor(
-        public term: string,
-        public def: string
+        // readonly property does below.
+        // Dict class can still access readonly variable once it gets Word class as a parameter.
+        // But from the outside of this class, readonly variables are not allowed to be accessed.
+        public readonly term: string,
+        public readonly def: string
     ) {}
 }
 

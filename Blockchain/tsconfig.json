@@ -1,0 +1,16 @@
+// if you have tsconfig.json file, 
+// VSCode will immediately know that you are working with typescript 
+// and it is going to give you very nice auto complete features.
+
+{
+    // typescript is now watching all the files inside of below paths such as "src"
+    "include": ["src"],
+    "compilerOptions": {
+        // outDir is basically such directory where the JS will be created once the ts file is compiled.
+        // in this case, build directory is going to be the directory that ts file is compiled to js file and saved at.
+        "outDir": "build",
+
+        // target is what is javascript version that you want typescript to compile to.
+        "target": "ES6"
+    }
+}

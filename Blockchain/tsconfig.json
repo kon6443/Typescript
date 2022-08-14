@@ -11,6 +11,9 @@
         "outDir": "build",
 
         // target is what is javascript version that you want typescript to compile to.
-        "target": "ES6"
+        "target": "ES6",
+
+        // Explains to typescript what APIs we are going to using and where is the code going to be running.
+        "lib": []
     }
 }
